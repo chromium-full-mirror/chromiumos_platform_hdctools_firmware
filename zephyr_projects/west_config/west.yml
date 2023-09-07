@@ -10,7 +10,7 @@ manifest:
   projects:
     - name: zephyr
       remote: zephyrproject-rtos
-      revision: v3.4.0
+      revision: 45e66de58f # TODO add tag for next release after v3.4.0
       import:
         path-prefix: sdk
         name-allowlist:

@@ -21,6 +21,16 @@ Activate the virtual environment using the shortcut.
 
 ### Build example project to validate everything is working
 
-Build an example project.
+Build an example project or Twinkie_v2
 
 `west build -p always -b nucleo_g474re sdk/zephyr/samples/basic/blinky`
+
+`west build -p always -b google_twinkie_v2 sdk/zephyr/samples/boards/google_twinkie_v2_pda`
+
+### Build Starfish
+
+`west build -p always -b starfish_v1 starfish`
+
+### Flash Starfish
+
+`sudo dfu-util -a 0 -s 0x8000000:leave -D build/zephyr/zephyr.bin`
