@@ -34,3 +34,7 @@ Build an example project or Twinkie_v2
 ### Flash Starfish
 
 `sudo dfu-util -a 0 -s 0x8000000:leave -D build/zephyr/zephyr.bin`
+
+### Build Twinkie
+
+`west build -p always twinkie_v2`
