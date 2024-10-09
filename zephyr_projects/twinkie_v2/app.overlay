@@ -12,11 +12,11 @@
 	cc_config {
 		compatible = "gpio-leds";
 		cc1_en: cc1en {
-			gpios = <&gpiob 2 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpiob 2 GPIO_ACTIVE_LOW>;
 		};
 
 		cc2_en: cc2en {
-			gpios = <&gpiob 13 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpiob 13 GPIO_ACTIVE_LOW>;
 		};
 	};
 

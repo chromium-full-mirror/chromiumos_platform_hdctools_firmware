@@ -37,7 +37,8 @@ int meas_vbus_v(int32_t *v)
 		.buffer = &sample_buffer,
 		/* buffer size in bytes, not number of samples */
 		.buffer_size = sizeof(sample_buffer),
-		.calibrate = true,
+		.calibrate = false,
+		.oversampling = 8
 	};
 	adc_sequence_init_dt(&adc_vbus_v.port, &sequence);
 
@@ -56,8 +57,6 @@ int meas_vbus_v(int32_t *v)
 	if (ret != 0) {
 		return ret;
 	}
-
-	*v *= 1.22;
 
 	return 0;
 }
