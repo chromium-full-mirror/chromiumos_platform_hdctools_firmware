@@ -9,6 +9,10 @@
 		zephyr,console = &cdc_acm_uart1;
 	};
 
+        csa_cc2: vconc {
+                sense-gain-mult = <200>;
+	};
+
 	cc_config {
 		compatible = "gpio-leds";
 		cc1_en: cc1en {
