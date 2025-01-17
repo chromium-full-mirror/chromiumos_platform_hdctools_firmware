@@ -1,5 +1,1 @@
-# primary
-bnemec@google.com
-
-# backup
-matthewb@chromium.org
+include chromiumos/owners:v1:/platform/OWNERS.hwtools
